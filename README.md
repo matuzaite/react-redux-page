@@ -1,3 +1,3 @@
 # react-redux-page
 
-Fetching some data with redux-thunk
+Small project where I fetch some data with redux-thunk
