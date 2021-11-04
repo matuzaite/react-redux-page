@@ -1,0 +1,22 @@
+.todo-container {
+  display: flex;
+  align-items: center;
+  background: rgb(241, 239, 239);
+  border-radius: 5px;
+
+  .todo-list {
+    width: 200px;
+    font-size: 10px;
+    list-style-type: none;
+    text-align: center;
+    padding: 8px;
+
+    li {
+      cursor: pointer;
+    }
+
+    .completed {
+      text-decoration: line-through;
+    }
+  }
+}

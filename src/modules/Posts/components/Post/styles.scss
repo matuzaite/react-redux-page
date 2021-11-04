@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Sriracha&display=swap");
+.post-body {
+  border: 1px solid white;
+  padding: 10px;
+  margin-top: 15px;
+  min-width: 200px;
+  max-width: 700px;
+  border-radius: 15px;
+
+  .author {
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Sriracha", cursive;
+    color: rgb(179, 255, 0);
+  }
+}

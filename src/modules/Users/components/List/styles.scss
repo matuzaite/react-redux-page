@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Sriracha&display=swap");
+
+.user-container {
+  font-family: "League Mono", "Fira Mono", monospace;
+  width: 85vw;
+  margin: 0 auto;
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  color: white;
+  height: 100vh;
+  flex-wrap: wrap;
+
+  h3 {
+    color: red;
+  }
+}
