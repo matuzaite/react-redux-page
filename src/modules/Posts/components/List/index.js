@@ -4,7 +4,7 @@ import "./styles.scss";
 import Post from "../Post";
 import { fetchPosts } from "../../actions";
 
-const PostList = () => {
+const List = () => {
   const dispatch = useDispatch();
   const posts = useSelector((state) => state.posts);
 
@@ -12,25 +12,14 @@ const PostList = () => {
     dispatch(fetchPosts());
   }, [dispatch]);
 
-  const addPostHandle = () => {
-    document.querySelector(".add-btn").style.display = "none";
-    document.querySelector(".post-container").style.display = "flex";
-  };
-
+  console.log(posts);
   return (
     <div className="post-list-body">
-      <button className="add-btn btn" onClick={addPostHandle}>
-        Add a post
-      </button>
-      <div className="post-container">
-        <textarea id="input-a" type="text" />
-        <button className="btn post-btn">POST</button>
-      </div>
       {posts.map((post) => {
-        return <Post key={`${post.id}${post.title}`} post={post} />;
+        return <Post key={`${post.id}${post.body}`} id={post.id} post={post} />;
       })}
     </div>
   );
 };
 
-export default PostList;
+export default List;
