@@ -11,3 +11,22 @@ export const fetchPosts = () => {
     });
   };
 };
+
+export const addPost = (post) => ({
+  type: "ADD_POST",
+  payload: post,
+});
+
+export const postPosts = (userData) => {
+  return (dispatch) => {
+    axios
+      .post("https://jsonplaceholder.typicode.com/posts/", userData)
+      .then((response) => {
+        console.log(response);
+        dispatch({
+          type: "POST_POSTS",
+          payload: response,
+        });
+      });
+  };
+};

@@ -1,12 +1,21 @@
 import React from "react";
 import "./styles.scss";
+import { useSpring, animated } from "react-spring";
 
 const Post = ({ post }) => {
+  const props = useSpring({
+    to: { opacity: 1 },
+    from: { opacity: 0 },
+    delay: 300,
+  });
+
   return (
-    <div className="post-body">
-      <h3 className="author">{post.id}</h3>
-      <p className="post">{post.body}</p>
-    </div>
+    <animated.div style={props}>
+      <div className="post-body">
+        <h1 className="author">{post.id}</h1>
+        <p>{post.body}</p>
+      </div>
+    </animated.div>
   );
 };
 

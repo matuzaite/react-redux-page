@@ -19,9 +19,9 @@ const ToDoList = () => {
 
   const handleClick = (e) => {
     const mappedList = complete.map((todo) =>
-      todo.id == e.target.id ? { ...todo, completed: !todo.completed } : todo
+      e.target.id == todo.id ? { ...todo, completed: !todo.completed } : todo
     );
-    setComplete(() => mappedList);
+    setComplete(mappedList);
   };
 
   return (
