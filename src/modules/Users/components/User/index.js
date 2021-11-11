@@ -1,12 +1,16 @@
 import React from "react";
 import "./styles.scss";
+import { Link } from "react-router-dom";
+import PersonIcon from "@mui/icons-material/Person";
 
 const User = ({ user }) => {
   return (
-    <div className="user-card">
-      <h3>{user.id} </h3>
-      <h2>{user.name}</h2>
-    </div>
+    <>
+      <Link to={`userlist/${user.id}`} className="user-card">
+        <PersonIcon className="id" />
+        <h2>{user.name}</h2>
+      </Link>
+    </>
   );
 };
 
