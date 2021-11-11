@@ -15,9 +15,10 @@ const UserList = () => {
 
   return (
     <div className="user-container">
-      {users.map((user) => {
-        return <User key={`${user.id}${user.name}`} user={user} />;
-      })}
+      {users.length &&
+        users.map((user) => {
+          return <User key={`${user.id}${user.name}`} user={user} />;
+        })}
     </div>
   );
 };

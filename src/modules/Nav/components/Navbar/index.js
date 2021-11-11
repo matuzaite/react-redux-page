@@ -32,6 +32,7 @@ const NavBar = () => {
             className="option"
             activeStyle={{ borderColor: "orange" }}
             to="/todolist"
+            exact
           >
             To Do List
           </NavLink>
@@ -40,7 +41,8 @@ const NavBar = () => {
           <NavLink
             className="option"
             activeStyle={{ borderColor: "orange" }}
-            to="userlist"
+            to="/userlist"
+            exact
           >
             User List
           </NavLink>
