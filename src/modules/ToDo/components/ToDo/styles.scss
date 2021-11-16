@@ -1,22 +1,36 @@
 .todo-container {
-  display: flex;
-  align-items: center;
-  background: rgb(241, 239, 239);
-  border-radius: 5px;
+  li {
+    text-align: left;
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
 
-  .todo-list {
-    width: 200px;
-    font-size: 10px;
-    list-style-type: none;
-    text-align: center;
-    padding: 8px;
-
-    li {
-      cursor: pointer;
+    .round-checkbox {
+      padding: 10px 10px;
+      width: 3px;
+      height: 3px;
+      background: #333232;
+      position: relative;
+      border-radius: 50%;
+      margin-right: 30px;
     }
 
-    .completed {
-      text-decoration: line-through;
+    .todo-item {
+      cursor: pointer;
+    }
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: rgb(93, 94, 91);
+
+    .arrow {
+      height: 12px;
+      width: 6px;
+      border-right: 2px solid #fee234;
+      border-bottom: 2px solid #fee234;
+      position: absolute;
+      transform: translate(-50%, -50%) rotate(45deg);
     }
   }
 }

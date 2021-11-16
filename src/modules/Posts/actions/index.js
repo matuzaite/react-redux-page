@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const fetchPosts = () => {
-  return async (dispatch, getState) => {
+  return async (dispatch) => {
     const promise = await axios.get(
       "https://jsonplaceholder.typicode.com/posts/?_start=0&_limit=50"
     );

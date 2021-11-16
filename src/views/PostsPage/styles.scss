@@ -1,9 +1,8 @@
 .posts-page-container {
   display: flex;
-  color: white;
   flex-direction: row;
   margin-top: 20px;
-  min-height: 100vh;
+  height: 100%;
   justify-content: space-around;
 }
 
@@ -18,8 +17,4 @@
 
 .post-container {
   display: none;
-}
-
-#input-a {
-  border-radius: 5px;
 }

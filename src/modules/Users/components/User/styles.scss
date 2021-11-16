@@ -6,23 +6,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: rgba(64, 68, 68, 0.295);
   text-decoration: none;
   color: rgb(173, 173, 172);
   text-align: center;
+  border: 1px solid rgb(67, 99, 99);
 
-  .id {
-    font-family: "Sriracha", cursive;
-    font-size: 90px;
+  .icon {
+    font-size: 60px;
     border-radius: 5px;
-    color: rgb(67, 99, 99);
   }
-
   &:hover {
-    background-color: rgb(73, 70, 65);
-  }
-
-  &:active {
-    background-color: rgb(0, 255, 128);
+    color: #5873fb;
   }
 }

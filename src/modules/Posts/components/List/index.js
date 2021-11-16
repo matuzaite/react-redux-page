@@ -12,7 +12,6 @@ const List = () => {
     dispatch(fetchPosts());
   }, [dispatch]);
 
-  console.log(posts);
   return (
     <div className="post-list-body">
       {posts.map((post) => {
