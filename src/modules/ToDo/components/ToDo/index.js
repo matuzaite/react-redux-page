@@ -1,20 +1,23 @@
 import React from "react";
 import "./styles.scss";
 
-const ToDo = ({ completed, title, toggleTodo, id }) => {
+const ToDo = ({ todo, toggleTodo }) => {
   return (
-    <div className="todo-container">
-      <ul className="todo-list">
-        {
-          <li
-            className={completed ? "completed" : ""}
-            id={id}
-            onClick={toggleTodo}
+    <div onClick={toggleTodo} className="todo-container">
+      {
+        <li className={todo.completed ? "completed" : "round-checkbox "}>
+          <span
+            className={
+              todo.completed ? "round-checkbox completed" : "round-checkbox"
+            }
           >
-            {title}
-          </li>
-        }
-      </ul>
+            <span className="arrow"></span>
+          </span>
+          <span className="todo-item" id={todo.id}>
+            {todo.title}
+          </span>
+        </li>
+      }
     </div>
   );
 };

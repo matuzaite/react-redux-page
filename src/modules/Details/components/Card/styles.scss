@@ -1,24 +1,30 @@
 .user-info-card {
   display: flex;
   flex-direction: column;
-  color: white;
-  border-radius: 10px;
   min-width: 450px;
   max-width: 500px;
   justify-content: space-around;
   align-items: center;
   height: 400px;
+  top: 25%;
+  position: sticky;
 
   ul {
     list-style: none;
     text-align: left;
     font-size: 22px;
 
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
     .m-icon {
       margin-right: 20px;
-      margin-top: 20px;
-      font-size: 19px;
-      color: rgb(166, 255, 49);
+      font-size: 22px;
+      color: #5873fb;
     }
   }
 

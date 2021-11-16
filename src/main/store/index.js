@@ -3,12 +3,14 @@ import thunk from "redux-thunk";
 import postsReducer from "../../modules/Posts/reducers/postsReducer";
 import toDosReducer from "../../modules/ToDo/reducers/toDosReducer";
 import usersReducer from "../../modules/Users/reducers/usersReducer";
+import userDetailsReducer from "../../modules/Details/reducers";
 import logger from "redux-logger";
 
 const allReducers = combineReducers({
   posts: postsReducer,
   todos: toDosReducer,
   users: usersReducer,
+  details: userDetailsReducer,
 });
 
 const middleware = [thunk, logger];

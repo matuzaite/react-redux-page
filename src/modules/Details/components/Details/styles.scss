@@ -1,9 +1,18 @@
-.user-info-container {
-  font-family: "League Mono", "Fira Mono", monospace;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.user-detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 100vh;
   color: white;
   margin-top: 100px;
+  min-width: 400px;
+
+  .small-nav {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 0 5px;
+    padding: 4px;
+  }
 }

@@ -28,17 +28,11 @@ const ToDoList = () => {
     <div className="todos-container">
       <div className="todos-body">
         <h1>TO DO LIST</h1>
-        {complete.map((todo) => {
-          return (
-            <ToDo
-              toggleTodo={handleClick}
-              id={todo.id}
-              title={todo.title}
-              key={`${todo.id}${todo.body}${todo.title}`}
-              completed={todo.completed}
-            />
-          );
-        })}
+        <ul className="todo-list">
+          {complete.map((todo) => {
+            return <ToDo toggleTodo={handleClick} key={todo.id} todo={todo} />;
+          })}
+        </ul>
       </div>
     </div>
   );
