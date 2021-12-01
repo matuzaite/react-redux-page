@@ -46,3 +46,9 @@
     color: rgb(196, 117, 117);
   }
 }
+
+@media (max-width: 800px) {
+  .form-container {
+    position: relative;
+  }
+}
