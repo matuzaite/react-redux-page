@@ -27,7 +27,7 @@ const NavBar = () => {
               }}
               to="/postlist"
             >
-              Post List
+              Posts
             </NavLink>
           </li>
           <li>
@@ -37,7 +37,7 @@ const NavBar = () => {
               to="/todolist"
               exact
             >
-              To Do List
+              To Dos
             </NavLink>
           </li>
           <li>
@@ -46,7 +46,7 @@ const NavBar = () => {
               activeStyle={{ borderBottom: "1px solid #ed4c76" }}
               to="/userlist"
             >
-              User List
+              Users
             </NavLink>
           </li>
         </div>

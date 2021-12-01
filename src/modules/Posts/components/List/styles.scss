@@ -2,8 +2,9 @@
   color: white;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  height: 100%;
+  min-height: 60vh;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
 .btn {
@@ -12,10 +13,6 @@
   border: 1px solid gray;
   color: white;
   border-radius: 5px;
-}
-
-.post-container {
-  display: none;
 }
 
 #input-a {

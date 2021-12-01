@@ -1,7 +1,6 @@
 .user-info-card {
   display: flex;
   flex-direction: column;
-  min-width: 450px;
   max-width: 500px;
   justify-content: space-around;
   align-items: center;
@@ -31,5 +30,12 @@
   .star {
     color: yellow;
     font-size: 23px;
+  }
+}
+
+@media (max-width: 800px) {
+  .user-info-card {
+    position: relative;
+    top: 0;
   }
 }

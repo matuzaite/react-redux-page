@@ -6,3 +6,10 @@
     margin-top: 20px;
   }
 }
+
+@media (max-width: 800px) {
+  .albums {
+    width: 80vw;
+    height: 100vh;
+  }
+}

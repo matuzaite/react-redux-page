@@ -6,3 +6,10 @@
     margin-left: -40px;
   }
 }
+
+@media (max-width: 800px) {
+  .user-todos {
+    width: 80vw;
+    min-height: 100vh;
+  }
+}
